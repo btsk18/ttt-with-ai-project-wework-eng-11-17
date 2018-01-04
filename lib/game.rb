@@ -36,4 +36,10 @@ attr_accessor :board, :player_1, :player_2
     return false if won? || over? == false
     true
   end
+
+  def winner
+    return nil if won? == false
+    winning_combo = won
+    
+  end
 end
