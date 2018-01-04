@@ -40,6 +40,8 @@ attr_accessor :board, :player_1, :player_2
   def winner
     return nil if won? == false
     @board.cells[won?.first]
+  end
 
+  def turn
   end
 end
