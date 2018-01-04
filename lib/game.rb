@@ -34,5 +34,6 @@ attr_accessor :board, :player_1, :player_2
 
   def draw?
     return false if won? || over? == false
+    true
   end
 end
