@@ -27,7 +27,7 @@ attr_accessor :board, :player_1, :player_2
   def won?
     WIN_COMBINATIONS.each { |combo|
         winning_combo = combo.map { |i| @board.cells[i] }
-        return combo if winning_combo.uniq.length == 1
+        return combo if winning_combo.uniq.length == 1 && !winning_combo.include?(" ")
     }
     return false
   end
@@ -41,6 +41,6 @@ attr_accessor :board, :player_1, :player_2
     return nil if won? == false
     binding.pry
     @board.cells[won?.first]
-    
+
   end
 end
