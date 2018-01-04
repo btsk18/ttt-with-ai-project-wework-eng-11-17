@@ -43,5 +43,6 @@ attr_accessor :board, :player_1, :player_2
   end
 
   def turn
+    input = gets.chomp
   end
 end
