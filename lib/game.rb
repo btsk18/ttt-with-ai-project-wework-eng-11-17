@@ -39,6 +39,7 @@ attr_accessor :board, :player_1, :player_2
 
   def winner
     return nil if won? == false
+    binding.pry
     @board.cells[won?.first]
     
   end
