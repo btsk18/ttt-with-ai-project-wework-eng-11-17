@@ -45,6 +45,6 @@ attr_accessor :board, :player_1, :player_2
   end
 
   def turn
-    
+    "1"
   end
 end
